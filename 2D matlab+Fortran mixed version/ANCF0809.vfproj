@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{DA7174AC-07B4-4BE4-BCB9-9E49CBBD3608}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="SOLVER">
+		<Filter Name="LINESOLVE">
+		<File RelativePath=".\CSR3.f90"/>
+		<File RelativePath=".\GET_NZNUM.f90"/>
+		<File RelativePath=".\JAC.f90"/>
+		<File RelativePath=".\SPARSE_SOLVER.f90"/></Filter>
+		<Filter Name="NEWTONSOLVER">
+		<File RelativePath=".\NEWTONSOLVER.f90"/>
+		<File RelativePath=".\NLEQNS.f90"/></Filter>
+		<Filter Name="STIFFNESS">
+		<File RelativePath=".\ELENLSTIFF.f90"/>
+		<File RelativePath=".\NLSTIFF.f90"/></Filter></Filter>
+		<Filter Name="PRE">
+		<File RelativePath=".\BASIC_DATA.f90"/>
+		<File RelativePath=".\READ_INFO.f90"/></Filter>
+		<File RelativePath=".\MAIN.f90"/>
+		<File RelativePath=".\SUMMARY.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
